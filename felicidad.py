@@ -12,7 +12,7 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar datos
-df = pd.read_csv("indicadorfelicidadcentroamerica.csv", sep=";", encoding="utf-8-sig")
+df = pd.read_csv("indicadorfelicidadcentroamerica.csv", sep=";", encoding="latin-1")
 
 # Convertir columnas a numéricas
 df["Ranking 2022"] = pd.to_numeric(df["Ranking 2022"], errors="coerce")
